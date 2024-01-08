@@ -1,0 +1,18 @@
+MainMemory MainMemory ( // @[MemoryControl.scala 23:26:@168.4]
+    .clk(MainMemory_clock),
+    .a(MainMemory_io_a),
+    .d(MainMemory_io_d),
+    .dpra(MainMemory_io_dpra),
+    .we(MainMemory_io_we),
+    .spo(MainMemory_io_spo),
+    .dpo(MainMemory_io_dpo)
+  );
+  VideoMem VMem ( // @[MemoryControl.scala 24:20:@171.4]
+    .clk(VMem_clock),
+    .a(VMem_io_a),
+    .dpra(VMem_io_dpra),
+    .d(VMem_io_d),
+    .we(VMem_io_we),
+    .spo(VMem_io_spo),
+    .dpo(VMem_io_dpo)
+  );
